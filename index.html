@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>UpConstruction Bootstrap Template - Index</title>
+  <title>Brothers Buildware</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -38,7 +38,43 @@
   ======================================================== -->
 </head>
 
-<body>
+<body >
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?45143';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"10",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"left"
+  },
+  "brandSetting":{
+      "brandName":"Brothers buildware",
+      "brandSubTitle":"Typically replies within a hour",
+      "brandImg":"https://lh3.googleusercontent.com/p/AF1QipNVadqMRkzvp1TlH7T_T56uwpvV-hIiqEyeuhIG=s1360-w1360-h1020",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a doubt regarding",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"35",
+      "autoShow":false,
+      "phoneNumber":"8943333023"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">
@@ -61,6 +97,9 @@
           <li class="nav-item">
             <a class="nav-link " href="#about-section"> <h4>about us</h2></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#product-section"> <h4>products</h2></a>
+          </li>
 
           <li class="nav-item">
             <a class="nav-link " href="#service-section"><h4>Services</h2></a>
@@ -78,6 +117,7 @@
       </nav><!-- .navbar -->
 
     </div>
+    
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -121,8 +161,8 @@
   <main id="main">
 
     <!-- ======= Get Started Section ======= -->
-    <section id="get-started" class="get-started section-bg">
-      <div class="container" id="about-section">
+    <section id="about-section" class="get-started section-bg">
+      <div class="container" >
 
         <div class="row justify-content-between gy-4">
 
@@ -147,8 +187,8 @@
     </section><!-- End Get Started Section -->
 
     <!-- ======= our main products ======= -->
-    <section id="constructions" class="constructions">
-      <div class="container" data-aos="fade-up" id="product-section">
+    <section id="product-section" class="constructions">
+      <div class="container" data-aos="fade-up" >
 
         <div class="section-header">
           <h2>Products</h2>
@@ -232,8 +272,8 @@
     </section><!-- End Constructions Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up" id="service-section">
+    <section id="service-section" class="services section-bg">
+      <div class="container" data-aos="fade-up" >
 
         <div class="section-header">
           <h2>Services</h2>
@@ -250,7 +290,7 @@
               </div>
               <h3>Project advice</h3>
               <p>Our knowledgeable staff are always on hand to provide expert advice and guidance to help you plan and execute your hardware projects.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+              
             </div>
             
           </div><!-- End Service Item -->
@@ -262,7 +302,7 @@
               </div>
               <h3>Delivery</h3>
               <p>We offer timely delivery services within a 5km radius to ensure that your products are delivered to your door when you need them.</p>
-              <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+             
             </div>
             
           </div><!-- End Service Item -->
@@ -285,8 +325,8 @@
    
 
     <!-- ======= Our Projects Section ======= -->
-    <section id="projects" class="projects">
-      <div class="container" data-aos="fade-up" id="gallery-section">
+    <section  id="gallery-section" class="projects">
+      <div class="container" data-aos="fade-up" >
 
         <div class="section-header">
           <h2>Gallery</h2>
@@ -310,10 +350,10 @@
               <div class="portfolio-content h-100">
                 <img src="images/grp pic.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Remodeling 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>staff</h4>
+                  
                   <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -322,10 +362,10 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/construction-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Construction 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>shop</h4>
+                  
                   <a href="assets/img/projects/construction-1.jpg" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -334,10 +374,11 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Repairs 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>hello
+                  </h4>
+                  
                   <a href="assets/img/projects/repairs-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                 
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -346,10 +387,9 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Design 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  
                   <a href="assets/img/projects/design-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                 
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -361,7 +401,7 @@
                   <h4>Remodeling 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/remodeling-2.jpg" title="Remodeling 2" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                 
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -373,7 +413,7 @@
                   <h4>Construction 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/construction-2.jpg" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -385,7 +425,7 @@
                   <h4>Repairs 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/repairs-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -397,7 +437,7 @@
                   <h4>Design 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/design-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -409,7 +449,7 @@
                   <h4>Remodeling 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/remodeling-3.jpg" title="Remodeling 3" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -421,7 +461,7 @@
                   <h4>Construction 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/construction-3.jpg" title="Construction 3" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -433,7 +473,7 @@
                   <h4>Repairs 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/repairs-3.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -445,7 +485,7 @@
                   <h4>Design 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/projects/design-3.jpg" title="Repairs 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                 
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -462,6 +502,8 @@
     
 
   </main><!-- End #main -->
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-d51abbaf-b5be-427a-a9a2-d979e0259480"></div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -476,8 +518,15 @@
               <p>
                 MV Sons Sopping Complex, cheroor Main Road,<br>
                 Peringavu, Thrissur - 680008 <br><br>
-                <strong>Phone:</strong> 8943333023<br>
-                <strong>Email:</strong> mvbrothershardwares@gmail.com<br>
+                <a href="tel:+91 9446247642">
+          <i class="bi bi-telephone"  aria-hidden="true"></i>  Call
+          
+        </a>
+                <strong> 8943333023</strong><br>
+                <a href="mailto:mvbrothershardwares@gmail.com">
+                  <i class="bi bi-envelope"></i>  Send mail
+                </a>
+                <strong> mvbrothershardwares@gmail.com</strong><br>
               </p>
               <div class="social-links d-flex mt-3">
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
@@ -492,10 +541,10 @@
             <h4>Useful Links</h4>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#about-section">About us</a></li>
+              <li><a href="#product-section">Products</a></li>
+              <li><a href="#service-section">Services</a></li>
+              <li><a href="#gallery-section">Gallery</a></li>
             </ul>
           </div><!-- End footer links column-->
 
